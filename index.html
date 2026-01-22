@@ -462,6 +462,42 @@
             color: var(--text-light);
             margin-bottom: 1rem;
         }
+/* Publications Section */
+.publication-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+}
+
+.publication-image {
+    flex: 1;
+}
+
+.publication-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.publication-details {
+    flex: 2;
+}
+
+.publication-details h3 {
+    font-size: 1.8rem;
+    color: var(--purple-primary);
+    margin-bottom: 1rem;
+}
+
+.publication-details p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
 
         /* Contact Section */
         .contact-container {
@@ -649,7 +685,7 @@
                 <div class="about-links">
                     <a href="https://linkedin.com/in/tanisha-dey" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/tanisha-dey" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="TanishaDey_Resume_July2.0.pdf" download class="btn">Download Resume</a>
+                    <a href="Tanisha_Jan2026.pdf" download class="btn">Download Resume</a>
                 </div>
             </div>
             <div class="about-image">
@@ -701,28 +737,49 @@
             </div>
         </div>
     </section>
-    <!-- Projects Section --> 
+   <!-- Projects Section --> 
 <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="projects-container">
-        
+
+        <!-- EcoTwin AI -->
+        <div class="project-card">
+            <div class="project-details">
+                <h3>EcoTwin AI – Digital Twin for Urban Sustainability Planning</h3>
+                <span class="tech-stack">
+                    Python, XGBoost, Random Forest, BERT, PostgreSQL–PostGIS, FastAPI, CesiumJS
+                </span>
+                <p>
+                    • Built a city-scale AI-driven urban digital twin integrating satellite remote sensing, geospatial machine learning, and transformer-based NLP, deployed via a cloud-native architecture with interactive 3D visualization and PDF-based simulation reports covering feasibility, energy efficiency, cost, and pollution impact.
+                </p>
+                <p>
+                    • Implemented an integrated urban intelligence pipeline combining XGBoost-based Urban Heat Island modeling (R² = 0.685, MAE = 1.34°C), a Random Forest–based sustainable material recommendation engine (93% accuracy, 87% with user preferences), and BERT-based geo-semantic sentiment analysis using web-scraped Reddit posts and news articles across 225 wards in Bengaluru.
+                </p>
+                <p>
+                    •  Authored a research paper titled <em>“EcoTwin AI: Digital Twin for Urban Sustainability Planning”</em>, accepted at the International Conference on Intelligent Computing and Control Systems (ICICCS-2026).
+                </p>
+            </div>
+        </div>
+
         <!-- Hybrid Network Intrusion Detection System -->
         <div class="project-card">
             <div class="project-details">
                 <h3>Hybrid Network Intrusion Detection System</h3>
-                <span class="tech-stack">Python, Scikit-learn</span>
-                <p>• Engineered a hybrid anomaly detection model for cybersecurity, combining Random Forest and Isolation Forest to flag malicious network traffic with a high accuracy of 98%.</p>
-                <p>• Emphasized problem solving and data analysis by building a user interface for real-time CSV uploads, risk classification, and anomaly insights.</p>
-            </div>
-        </div>
-
-        <!-- IoT-Based Health Monitoring System -->
-        <div class="project-card">
-            <div class="project-details">
-                <h3>IoT-Based Health Monitoring System</h3>
-                <span class="tech-stack">Arduino IDE, ThingSpeak</span>
-                <p>• Developed an innovative, real-time, cloud-integrated IoT solution to track 5+ vitals like temperature, ECG, humidity, and heart rate using Arduino sensors.</p>
-                <p>• Leveraged scalable infrastructure and machine learning logic to assess anomalies and deliver health insights through cloud computing dashboards.</p>
+                <span class="tech-stack">
+                    Python, Scikit-learn, Random Forest, Isolation Forest, Autoencoders
+                </span>
+                <p>
+                    • Designed and implemented a hybrid Intrusion Detection System integrating supervised, unsupervised, and reconstruction-based learning with a confidence-based adaptive ensemble strategy to detect both known and zero-day attacks.
+                </p>
+                <p>
+                    • Evaluated on the CICIDS2017 dataset, achieving 99.55% accuracy, 1.00 precision, and ROC-AUC of 0.9898; built a user interface for real-time CSV uploads, automated risk classification, and anomaly insights.
+                </p>
+                <p>
+                    • Authored a research paper titled “An Adaptive Hybrid Ensemble Framework for Network Intrusion
+Detection Using Supervised, Unsupervised and Deep Reconstruction Learning,” presented at the 9th
+IEEE International Conference on Computational Systems and Information Technology for Sustainable
+Solutions (CSITSS-2025), published in IEEE Xplore.
+                </p>
             </div>
         </div>
 
@@ -730,14 +787,84 @@
         <div class="project-card">
             <div class="project-details">
                 <h3>AI Tutor Web App</h3>
-                <span class="tech-stack">Python, Streamlit, Ollama</span>
-                <p>• Built an AI-powered educational assistant capable of summarizing academic PDFs, answering subject-specific queries, and generating quizzes aligned with Bloom’s taxonomy.</p>
-                <p>• Demonstrated innovation and strategic thinking by integrating a real-time chatbot for student collaboration and adaptability.</p>
+                <span class="tech-stack">
+                    Python, Streamlit, NLP, LLMs (Ollama)
+                </span>
+                <p>
+                    • Developed an AI-powered educational assistant supporting academic PDF ingestion, semantic summarization, subject-specific question answering, and quiz generation aligned with Bloom’s taxonomy.
+                </p>
+                <p>
+                    • Implemented a real-time conversational chatbot enabling adaptive, context-aware learning and collaborative student interaction.
+                </p>
             </div>
         </div>
 
     </div>
 </section>
+
+     </section>
+
+<!-- Publications Section -->
+<section id="publications" class="publications">
+    <h2>Publications</h2>
+
+    <div class="publication-container">
+        <div class="publication-image">
+            <img src="nids_photo.jpeg" alt="Hybrid Intrusion Detection Research Paper">
+        </div>
+
+        <div class="publication-details">
+            <h3>An Adaptive Hybrid Ensemble Framework for Network Intrusion Detection</h3>
+            <p>
+                <strong>S. S.</strong>, <strong>T. Dey</strong> and <strong>R. B. S.</strong><br>
+                <em>
+                    An Adaptive Hybrid Ensemble Framework for Network Intrusion Detection Using
+                    Supervised, Unsupervised and Deep Reconstruction Learning
+                </em>
+            </p>
+            <p>
+                Proceedings of the 9th International Conference on Computational System and
+                Information Technology for Sustainable Solutions (CSITSS), Bangalore, India, 2025.
+            </p>
+            <p>
+                <strong>IEEE Xplore</strong> |
+                DOI:
+                <a href="https://doi.org/10.1109/CSITSS67709.2025.11294342" target="_blank">
+                    10.1109/CSITSS67709.2025.11294342
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- EcoTwin AI Paper (Accepted) -->
+    <div class="publication-container">
+        <div class="publication-image">
+            <img src="ecotwinimg.jpg" alt="EcoTwin AI Research Paper">
+        </div>
+
+        <div class="publication-details">
+            <h3>EcoTwin AI: Digital Twin for Urban Sustainability Planning</h3>
+            <p>
+                <strong>H. V.</strong>, <strong>S. Markande</strong>, <strong>K. N.</strong>, <strong>S. S.</strong> 
+                 and <strong>T. Dey</strong><br>
+                <em>
+                    EcoTwin AI: Digital Twin for Urban Sustainability Planning
+                </em>
+            </p>
+            <p>
+                International Conference on Intelligent Computing and Control Systems (ICICCS),
+                2026.
+            </p>
+            <p>
+                <strong>Status:</strong> <span style="color: #6a1b9a; font-weight: 600;">
+                    Accepted for Presentation
+                </span>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
@@ -755,7 +882,19 @@
 
                 </div>
             </div>
-            
+            <!-- NPTEL -->
+            <div class="certificate-card">
+                <div class="certificate-image">
+                    <img src="nptel2.jpeg" alt="NPTEL Certificate">
+                </div>
+                <div class="certificate-details">
+                    <h3>AI for Economics</h3>
+                    <span class="issuer">IIT Kharagpur • Sept 2025</span>
+                    <p>Earned an Elite + Silver Certification with a consolidated score of 82%. Acquired understanding of
+applying AI and machine learning techniques in economic modeling, prediction, and decision-making.</p>
+
+                </div>
+            </div>
             <!-- IEEE AI Ethics -->
             <div class="certificate-card">
                 <div class="certificate-image">
